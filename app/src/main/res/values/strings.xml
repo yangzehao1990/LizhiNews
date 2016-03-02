@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">荔枝新闻</string>
+    <string name="more_channel">点击加载更多频道</string>
+    <string name="my_channel">我的频道</string>
+
+    <!--启动页-->
+    <string name="splash_view1">界面换新</string>
+    <string name="splash_view2">频道上线</string>
+    <string name="splash_view3">“荔枝树”养成</string>
+    <string name="all_to_load">已显示全部内容</string>
+    <string name="refresh_finish">刷新完成</string>
+    <string name="no_network">没有网络</string>
+    <string name="loadmore">正在加载.....</string>
+    <string name="net_info">网络状态</string>
+    <string name="setting_network">当前没有可用网络,请设置网络</string>
+    <string name="determined">确定</string>
+    <string name="cancel">取消</string>
+    
+
+    <!--toolbar标题-->
+    <string name="top">头条</string>
+    <string name="jiangsu">江苏</string>
+    <string name="zaixianchang">在现场</string>
+    <string name="jiangsuweishi">江苏卫视</string>
+    <string name="lizhiruiping">荔枝瑞评</string>
+    <string name="yuanchuang">原创</string>
+    <string name="yule">娱乐</string>
+    <string name="doubansudi">豆瓣速递</string>
+    <string name="dujiayifan">独家一番</string>
+    <string name="zhuanti">专题</string>
+    <string name="lizhipai">荔枝派</string>
+    <string name="guonei">国内</string>
+    <string name="guoji">国际</string>
+    <string name="shehui">社会</string>
+    <string name="caijing">财经</string>
+    <string name="tiyu">体育</string>
+    <string name="qiche">汽车</string>
+    <string name="keji">科技</string>
+    <string name="fangchan">房产</string>
+    <string name="junshi">军事</string>
+    <string name="jiandu">监督</string>
+
+
+    
+
+    <!-- DrawerLayout -->
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+
+    <string name="special">专题</string>
+    
+    <string name="info">新闻详情</string>
+    
+    
+    
+    <string name="not_less_than_five">不能少于五项</string>
+
+</resources>

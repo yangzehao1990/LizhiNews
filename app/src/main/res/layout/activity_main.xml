@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_drawer_id"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <HorizontalScrollView
+                    android:id="@+id/main_horizontalscrollview_id"
+                    android:scrollbars="none"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:background="#eeeeee"
+                            android:id="@+id/main_radoigroup_id"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/main_top_id"
+                                style="@style/Channel"
+                                android:textSize="18sp"
+                                android:checked="true"
+                                android:textColor="#f00"
+                                android:text="@string/top"/>
+
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                style="@style/Channel"
+                                android:text="@string/jiangsu"
+                                android:id="@+id/main_jiangsu_id"/>
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                android:id="@+id/main_guonei_id"
+                                android:text="@string/guonei"
+                                style="@style/Channel"/>
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                android:id="@+id/main_guoji_id"
+                                android:text="@string/guoji"
+                                style="@style/Channel"/>
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                android:id="@+id/main_zaixianchang_id"
+                                android:text="@string/zaixianchang"
+                                style="@style/Channel"/>
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                android:id="@+id/main_lizhipai_id"
+                                android:text="@string/lizhipai"
+                                style="@style/Channel"/>
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                android:id="@+id/main_dujiayifan_id"
+                                android:text="@string/dujiayifan"
+                                style="@style/Channel"/>
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                android:id="@+id/main_tiyu_id"
+                                android:text="@string/tiyu"
+                                style="@style/Channel"/>
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                android:id="@+id/main_junshi_id"
+                                android:text="@string/junshi"
+                                style="@style/Channel"/>
+
+                            <RadioButton
+                                android:textSize="16sp"
+                                android:id="@+id/main_keji_id"
+                                android:text="@string/keji"
+                                style="@style/Channel"/>
+
+
+                        </RadioGroup>
+
+                        <View
+                            android:background="#f00"
+                            android:id="@+id/main_guide_id"
+                            android:layout_width="90dp"
+                            android:layout_height="2dp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+                <!--<RelativeLayout-->
+                    <!--android:visibility="gone"-->
+                    <!--android:background="#eeeeee"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="50dp">-->
+
+                    <!--<View-->
+                        <!--android:background="@mipmap/gra"-->
+                        <!--android:layout_width="3px"-->
+                        <!--android:layout_height="match_parent" />-->
+
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/main_add_id"-->
+                        <!--android:background="@mipmap/add_big"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true"/>-->
+
+                <!--</RelativeLayout>-->
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_viewpager_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:layout_width="400dp"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navigation_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                app:headerLayout="@layout/navigation_left_layout" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</LinearLayout>

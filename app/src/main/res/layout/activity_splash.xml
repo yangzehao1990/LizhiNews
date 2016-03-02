@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/splash_layout"
+              android:background="@mipmap/c04"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <com.example.lizhinews.view.SixDeformationView
+        android:text="@string/splash_view1"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.example.lizhinews.view.SixDeformationView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/view2"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/splash_view2"
+        android:layout_marginBottom="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/view"
+        android:layout_alignTop="@id/view"
+        android:layout_marginRight="30dp" />
+
+    <com.example.lizhinews.view.SixDeformationView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/view3"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/splash_view3"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/view"
+        android:layout_marginLeft="30dp" />
+
+
+</RelativeLayout>
